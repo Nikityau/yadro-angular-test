@@ -1,0 +1,8 @@
+<div class="moneys">
+  <money
+    *ngFor="let key of Object.keys((course?.course?.Valute | courseFilter: moneyCodes) || {})"
+    [moneyName]="course?.course?.Valute?.[key]?.CharCode || ''"
+    [moneyCurrState]="course?.course?.Valute?.[key]?.Value || 0"
+    [moneyPrevSate]="course?.course?.Valute?.[key]?.Previous || 0"
+  />
+</div>

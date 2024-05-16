@@ -1,0 +1,27 @@
+.char-codes-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transform: translate(120px, 20px);
+
+  padding: 10px;
+
+  background: #d1d1d1;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .char-codes-modal__code {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.char-codes-modal_has {
+  opacity: .5;
+}

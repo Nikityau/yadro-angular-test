@@ -1,0 +1,37 @@
+.live-money {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  .live-money__header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+
+    font-family: "Roboto", sans-serif;
+
+    margin-bottom: 15px;
+
+    .live-money__more {
+      position: absolute;
+      top: 50%;
+      right: 0;
+
+      transform: translate(50px, -50%);
+
+      cursor: pointer;
+
+      svg {
+        transition: all .3s linear;
+      }
+    }
+    .live-money__more_open {
+      svg {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
